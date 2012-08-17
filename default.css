@@ -1,0 +1,103 @@
+#container {
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 760px; 
+	background: #336699;
+	font-family: calibri;
+	height: 100%;
+}
+
+body { /* black background */
+	background-color: #000000;
+}
+
+a img { /* removes image borders in IE */
+    border: 0;
+}
+
+h1 { /* header text effects */
+	text-shadow: 5px 3px 3px #777777;
+}
+
+#header {
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+ul#tabs { /* general settings */
+	text-align: center; /* aligns tab menu to left, right or center */
+	margin: 0 0 0 0; /* set margins as desired */
+	border-bottom: 1px solid #555555; /* set border COLOR as desired */
+	list-style-type: none;
+	padding: 3px 10px 3px 10px; /* THIRD number must change with respect to padding-top (X) below */
+}
+
+ul#tabs li { /* do not change */
+	display: inline;
+}
+
+body#tab1 li.tab1, body#tab2 li.tab2, body#tab3 li.tab3, body#tab4 li.tab4 { /* settings for selected tab */
+	border-bottom: 1px solid #336699; /* set border color to page background color */
+	background-color: #336699; /* set background color to match above border color */
+}
+
+body#tab1 li.tab1 a, body#tab2 li.tab2 a, body#tab3 li.tab3 a, body#tab4 li.tab4 a { /* settings for selected tab link */
+	background-color: #336699; /* set selected tab background color as desired */
+	border: 1px solid #555555; /* set border COLOR as desired; usually matches border color specified in #tabs */
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	color: #000000; /* set selected tab link color as desired */
+	position: relative;
+	top: 1px;
+	padding-top: 4px; /* must change with respect to padding (X) above and below */
+	border-bottom: none;
+	opacity: 1;
+}
+
+ul#tabs li a { /* settings for all tab links */
+	padding: 3px 4px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
+	color: #aaaaaa; /* set unselected tab link color as desired */
+	margin-right: 0px; /* set additional spacing between tabs as desired */
+	text-decoration: none;
+	border-bottom: none;
+}
+
+ul#tabs a:hover { /* settings for hover effect */
+	background: #aaaaaa; /* set desired hover color */
+	color: #ffffff; /* text color */
+	background-color:rgba(0,0,0,0.5); /* set desired color and opacity */
+}
+
+#leftBar {
+	font-size: 20;
+	float: left;  
+	background: #336699; 
+}
+
+#content {
+	float: left;
+	width: 400px;
+	background-color: #336699;
+	margin: 0px 0px 0px 10px;
+}
+
+#rightBar { 
+	float: right; 
+	width: 180px; 
+	background: #336699; 
+}
+
+#footer { 
+	clear: both;
+	position: absolute;
+	bottom: 0px;
+	width: 760px;
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	border-top: 1px solid #555555;
+} 
